@@ -1,0 +1,54 @@
+﻿@model DotNetCoreSqlDb.Models.Member
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Member</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FirstName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Degree)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Degree)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.GameProject)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.GameProject)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SkillsLink)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SkillsLink)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ProfileLink)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ProfileLink)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.ID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
